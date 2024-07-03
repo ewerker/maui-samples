@@ -8,18 +8,23 @@
             Spacing="25" 
             Padding="30,0" 
             VerticalOptions="Center">
-            
-            <Label 
-                Text="Hello, Mainsite!"
-                x:Name="label"
-                FontSize="48"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                BindingContext="{x:Reference Name=slider}"
-                Rotation="{Binding Path=Value}"/>
-            
+
+            <Label Text="Scannerpage"
+       FontSize="40"
+       HorizontalOptions="Center"
+       VerticalOptions="Center">
+                <Label.Rotation>
+                    <Binding Path="Value">
+                        <Binding.Source>
+                            <x:Reference Name="slider" />
+                        </Binding.Source>
+                    </Binding>
+                </Label.Rotation>
+            </Label>
+
             <Slider x:Name="slider"
-                Maximum="360"
+                Minimum="-180"
+                Maximum="180"
                 VerticalOptions="Center" />
             
             <Button
