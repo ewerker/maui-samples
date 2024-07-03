@@ -4,22 +4,23 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:ShellTabBarSample"
+    
     Shell.FlyoutBehavior="Disabled">
     
     <TabBar>
-        <Tab Title="Scanner">
+        <Tab Title="Scanner" Icon="{StaticResource IconOne}">
             <ShellContent
                 Title="QR Scanner"
                 ContentTemplate="{DataTemplate local:MainPage}"
                 Route="OnePage" /> 
         </Tab>
-        <Tab Title="Config">
+        <Tab Title="Config" Icon="{StaticResource IconTwo}">
             <ShellContent
                 Title="Configuration"
                 ContentTemplate="{DataTemplate local:ConfigPage}"
                 Route="TwoPage" />
         </Tab>
-        <Tab Icon="{StaticResource IconThree}">
+        <Tab Title="About" Icon="{StaticResource IconThree}">
             <ShellContent
                 x:Name="about"
                 Title="About"

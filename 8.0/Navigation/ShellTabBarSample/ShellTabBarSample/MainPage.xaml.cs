@@ -9,10 +9,12 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
+	async public void OnCounterClicked(object sender, EventArgs e)
 	{
 		count++;
-
+        if (count>10) await DisplayAlert("ALERT", count.ToString(), "OK");
+          
+        
 		if (count == 1)
 			CounterBtn.Text = $"Main {count} time";
 		else
@@ -21,7 +23,8 @@ public partial class MainPage : ContentPage
 
 
         SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+        return;
+    }
 
 }
 
