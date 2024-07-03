@@ -11,7 +11,7 @@
 
                           
             <Label 
-                Text="Hello, About!"
+                Text="How it works?"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" />
@@ -20,8 +20,8 @@
 
             <Button 
                 x:Name="CounterBtn"
-                Text="Click on About"
-                SemanticProperties.Hint="Counts the number of times you click"
+                Text="ALL INFORMATIONS"
+                SemanticProperties.Hint="Website"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 

@@ -9,16 +9,9 @@ public partial class AboutPage : ContentPage
 		InitializeComponent();
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
+	private async void OnCounterClicked(object sender, EventArgs e)
 	{
-		count++;
-
-		if (count == 1)
-			CounterBtn.Text = $"About {count} time";
-		else
-			CounterBtn.Text = $"About {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+        await Launcher.Default.OpenAsync("https://w-2.de");
+    }
 }
 
