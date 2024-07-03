@@ -1,10 +1,10 @@
 ﻿namespace ShellTabBarSample;
 
-public partial class MainPage : ContentPage
+public partial class ConfigPage : ContentPage
 {
 	int count = 0;
 
-	public MainPage()
+	public ConfigPage()
 	{
 		InitializeComponent();
 	}
@@ -14,9 +14,9 @@ public partial class MainPage : ContentPage
 		count++;
 
 		if (count == 1)
-			CounterBtn.Text = $"Main {count} time";
+			CounterBtn.Text = $"Config {count} time";
 		else
-			CounterBtn.Text = $"Main {count} times";
+			CounterBtn.Text = $"Config {count} times";
 
 		SemanticScreenReader.Announce(CounterBtn.Text);
 	}

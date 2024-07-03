@@ -7,29 +7,23 @@
     Shell.FlyoutBehavior="Disabled">
 
     <TabBar>
-        <Tab Title="One" Icon="{StaticResource IconOne}">
+        <Tab Title="Scanner" Icon="{StaticResource IconOne}">
             <ShellContent
-                Title="One"
+                Title="QR Scanner"
                 ContentTemplate="{DataTemplate local:MainPage}"
                 Route="OnePage" /> 
         </Tab>
-        <Tab Title="Two" Icon="{StaticResource IconTwo}">
+        <Tab Title="Config" Icon="{StaticResource IconTwo}">
             <ShellContent
-                Title="Two"
-                ContentTemplate="{DataTemplate local:MainPage}"
+                Title="Configuration"
+                ContentTemplate="{DataTemplate local:ConfigPage}"
                 Route="TwoPage" />
         </Tab>
-        <Tab Title="Three" Icon="{StaticResource IconThree}">
+        <Tab Title="About" Icon="{StaticResource IconThree}">
             <ShellContent
-                Title="Three"
-                ContentTemplate="{DataTemplate local:MainPage}"
+                Title="About"
+                ContentTemplate="{DataTemplate local:AboutPage}"
                 Route="ThreePage" />
-        </Tab>
-        <Tab Title="Four" Icon="{StaticResource IconFour}">
-            <ShellContent
-                Title="Four"
-                ContentTemplate="{DataTemplate local:MainPage}"
-                Route="FourPage" />
         </Tab>
     </TabBar>
 
