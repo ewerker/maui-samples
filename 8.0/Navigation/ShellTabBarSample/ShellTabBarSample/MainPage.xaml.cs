@@ -17,8 +17,11 @@ public partial class MainPage : ContentPage
 			CounterBtn.Text = $"Main {count} time";
 		else
 			CounterBtn.Text = $"Main {count} times";
+		    
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
+
+        SemanticScreenReader.Announce(CounterBtn.Text);
 	}
+
 }
 

@@ -5,22 +5,23 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:ShellTabBarSample"
     Shell.FlyoutBehavior="Disabled">
-
+    
     <TabBar>
-        <Tab Title="Scanner" Icon="{StaticResource IconOne}">
+        <Tab Title="Scanner">
             <ShellContent
                 Title="QR Scanner"
                 ContentTemplate="{DataTemplate local:MainPage}"
                 Route="OnePage" /> 
         </Tab>
-        <Tab Title="Config" Icon="{StaticResource IconTwo}">
+        <Tab Title="Config">
             <ShellContent
                 Title="Configuration"
                 ContentTemplate="{DataTemplate local:ConfigPage}"
                 Route="TwoPage" />
         </Tab>
-        <Tab Title="About" Icon="{StaticResource IconThree}">
+        <Tab Icon="{StaticResource IconThree}">
             <ShellContent
+                x:Name="about"
                 Title="About"
                 ContentTemplate="{DataTemplate local:AboutPage}"
                 Route="ThreePage" />
